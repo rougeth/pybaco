@@ -3,6 +3,7 @@ from string import digits, ascii_uppercase, ascii_lowercase
 
 base2 = '01'
 base8 = digits[:7]
+base10 = digits
 base16 = digits + 'abcdef'
 base36 = digits + ascii_lowercase
 base62 = digits + ascii_uppercase + ascii_lowercase
