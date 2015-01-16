@@ -1,11 +1,14 @@
 pybaco
 ======
 
-Python Base Converter
+Python Base Converter - Converts any base to any base
 
+**Installing**
+```
+$ pip install pybaco
+```
 
-* Converts any base to any base
-
+**Usage**
 ``` python
 from string import digits
 from pybaco import Baco, base2, base10, base16
