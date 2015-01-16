@@ -1,20 +1,36 @@
 from string import digits, ascii_uppercase, ascii_lowercase
 
 
+base2 = '01'
+base8 = digits[:7]
+base16 = digits + 'abcdef'
+base36 = digits + ascii_lowercase
+base62 = digits + ascii_uppercase + ascii_lowercase
+
+
 class Baco(object):
 
     def __init__(self, number, alphabet):
-        self.number = number
+
+        self.number = [alphabet.index(i) for i in str(number)]
         self.base = len(alphabet)
         self.alphabet = alphabet
 
     def convert(self, alphabet):
-        number = self.number
+
+        digits = self.number
         base = len(alphabet)
+
+        number = 0
+        for digit in digits:
+            number = self.base * number + digit
+        print(number)
+
         digits = []
         while number > 0:
             digits.insert(0, number % base)
             number = number // base
+        print(number)
 
         return ''.join([alphabet[d] for d in digits])
 
