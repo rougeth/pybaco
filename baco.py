@@ -25,13 +25,11 @@ class Baco(object):
         number = 0
         for digit in digits:
             number = self.base * number + digit
-        print(number)
 
         digits = []
         while number > 0:
             digits.insert(0, number % base)
             number = number // base
-        print(number)
 
         return ''.join([alphabet[d] for d in digits])
 
