@@ -36,24 +36,29 @@ class Baco(object):
     @classmethod
     def to_bin(cls, number, alphabet=digits):
         b = cls(number=number, alphabet=alphabet)
-        return b.convert('01')
+        return b.convert(base2)
 
     @classmethod
     def to_oct(cls, number, alphabet=digits):
         b = cls(number=number, alphabet=alphabet)
-        return b.convert('01234567')
+        return b.convert(base8)
+
+    @classmethod
+    def to_dec(cls, number, alphabet):
+        b = cls(number=number, alphabet=alphabet)
+        return b.convert(base10)
 
     @classmethod
     def to_hex(cls, number, alphabet=digits):
         b = cls(number=number, alphabet=alphabet)
-        return b.convert(digits + 'abcdef')
+        return b.convert(base16)
 
     @classmethod
     def to_36(cls, number, alphabet=digits):
         b = cls(number=number, alphabet=alphabet)
-        return b.convert(digits + ascii_lowercase)
+        return b.convert(base36)
 
     @classmethod
     def to_62(cls, number, alphabet=digits):
         b = cls(number=number, alphabet=alphabet)
-        return b.convert(digits + ascii_uppercase + ascii_lowercase)
+        return b.convert(base62)

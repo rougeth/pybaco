@@ -42,3 +42,8 @@ def test_Baco_to_62():
 def test_Baco_from_16_to_62():
     b = Baco.to_62('abc', base16)
     assert b == 'iK'
+
+
+def test_Baco_from_62_to_10():
+    b = Baco.to_dec('1LY7VK', base62)
+    assert b == '1234567890'
