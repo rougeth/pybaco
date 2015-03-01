@@ -1,5 +1,15 @@
-from string import digits
-from pybaco import Baco, base16
+from string import digits, ascii_uppercase, ascii_lowercase
+
+from baco import Baco, base2, base8, base10, base16, base36, base62
+
+
+def test_Baco_alphabets():
+    assert base2 == '01'
+    assert base8 == '01234567'
+    assert base10 == digits
+    assert base16 == digits + 'abcdef'
+    assert base36 == digits + ascii_lowercase
+    assert base62 == digits + ascii_uppercase + ascii_lowercase
 
 
 def test_Baco_class():
@@ -19,7 +29,7 @@ def test_Baco_to_hex():
     assert b == 'f'
 
 
-def test_baco_to_bin():
+def test_Baco_to_bin():
     b = Baco.to_bin(18)
     assert b == '10010'
 
