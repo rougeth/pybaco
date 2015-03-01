@@ -27,5 +27,6 @@ Baco.to_62(123456789) # 8M0kX
 # Specifing the origin base
 Baco.to_bin(15, base16) # 1111
 Baco.to_62('abc', base16) # ik
+Baco.to_dec('a', base16) # 10
 
 ```
