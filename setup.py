@@ -1,5 +1,4 @@
 from setuptools import find_packages, setup
-import os
 
 
 setup(
@@ -8,6 +7,6 @@ setup(
     author='Marco Rougeth',
     author_email='marco@rougeth.com',
     url='http://github.com/rougeh/pybaco',
-    version='0.1',
+    version='0.2',
     py_modules=['baco'],
 )
