@@ -1,7 +1,7 @@
 pybaco
 ======
 
-Python Base Converter - Converts any base to any base
+Python Base Converter - Converts any number base to any number base
 
 **Installing**
 ```
@@ -18,6 +18,7 @@ b = Baco(18, base10)
 b.convert(base2) # 10010
 
 # Shortcuts
+# assuming that the number to be converted is in decimal base
 Baco.to_bin(18) # 10010
 Baco.to_oct(18) # 22
 Baco.to_hex(15) # f
