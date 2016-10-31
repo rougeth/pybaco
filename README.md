@@ -33,6 +33,6 @@ Baco.to_dec('a', base16) # 10
 ```
 
 **Testing**
-``` python
+```
 $ python test.py
 ```
