@@ -31,3 +31,8 @@ Baco.to_62('abc', base16) # ik
 Baco.to_dec('a', base16) # 10
 
 ```
+
+**Testing**
+``` python
+$ python test.py
+```

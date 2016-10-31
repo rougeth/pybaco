@@ -1,5 +1,4 @@
-from string import digits, ascii_uppercase, ascii_lowercase
-
+from string import ascii_lowercase, ascii_uppercase, digits
 
 base2 = digits[:2]
 base8 = digits[:8]
