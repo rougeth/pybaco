@@ -7,5 +7,5 @@ setup(
     author_email='marco@rougeth.com',
     url='http://github.com/rougeh/pybaco',
     version='0.2',
-    py_modules=['baco'],
+    py_modules=['pybaco', 'baco'],
 )
