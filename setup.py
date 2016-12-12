@@ -6,6 +6,6 @@ setup(
     author='Marco Rougeth',
     author_email='marco@rougeth.com',
     url='http://github.com/rougeh/pybaco',
-    version='0.2',
+    version='0.3.0',
     py_modules=['pybaco', 'baco'],
 )
